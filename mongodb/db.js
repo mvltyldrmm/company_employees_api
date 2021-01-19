@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 module.exports = () =>{
-    mongoose.connect(process.env.MONGODB_URI,{ useNewUrlParser: true });
+    mongoose.connect('mongodb+srv://mvltyldrm:rNs0pgZfauw9bwl8@cluster0.ketie.mongodb.net/company-employees-api?retryWrites=true&w=majority',{ useNewUrlParser: true });
     mongoose.connection.on('open',()=>{
         console.log('MONGODB: Baglandi');
     });
