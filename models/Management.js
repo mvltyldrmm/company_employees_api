@@ -3,8 +3,14 @@ const mongoose = require('mongoose');
 const Schema = mongoose.Schema;
 
 const ManagementSchema = new Schema({
-    name : String,
-    Surname: String,
+    Name:{
+        type:String,
+        required: true
+    },
+    Surname:{
+        type:String,
+        required: true
+    },
     Bio : String,
     Department: String,
     createdAt:{
