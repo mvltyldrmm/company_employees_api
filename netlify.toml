@@ -1,2 +1,6 @@
+[dev]
+    functions = "lambda"
+
 [build]
-    functions="lambda"
+    command = "npm install"
+    functions = "lambda"
